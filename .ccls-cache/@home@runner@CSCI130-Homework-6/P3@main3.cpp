@@ -17,5 +17,15 @@ int main() {
 
   
 
-  
+
+}
+
+double powerGen(double H, double Q)
+{
+  const double p = 977;
+  const double g = 9.8; 
+
+  double P = p * Q * H * g;
+
+  return P;
 }

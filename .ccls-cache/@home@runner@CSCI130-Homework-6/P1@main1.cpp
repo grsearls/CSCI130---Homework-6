@@ -16,6 +16,7 @@ using namespace std;
 //////////////////// Prototype Functions /////////////////////////////////////
 void TranslatePick(int flag_who, char selection);
 char ComputerSelectRPSLK();
+void DetermineWinner(char userPick, char computerPick);
 
 //////////////////// MAIN ////////////////////////////////////////////////////
 int main()
@@ -54,7 +55,7 @@ int main()
     TranslatePick(1, computerPick); // Inform user of computer selection
     
     // HANDOUT (PART A): Determine the winner of the game.
-    
+    DetermineWinner(userPick, computerPick);
     
     
     // HANDOUT (PART B): Inform the user who won.
@@ -201,7 +202,22 @@ void DetermineWinner(char userPick, char computerPick)
     else if (computerPick == 'S')
       cout << "You lose";
   }
-  //
+  // if user picks Spock
+  if (userPick == 'K')
+  {
+    if (computerPick == 'R')
+      cout << "You Win";
+    else if (computerPick == 'P')
+      cout << "You lose";
+    else if (computerPick == 'K')
+      cout << "Tie";
+    else if (computerPick == 'L')
+      cout << "You lose";
+    else if (computerPick == 'S')
+      cout << "You Win";
+  }
+
+  return;
 }
 
 

@@ -145,7 +145,34 @@ char ComputerSelectRPSLK()
 
 void DetermineWinner(char userPick, char computerPick)
 {
-  
+  // if user picks rock
+  if (userPick == 'R')
+  {
+    if (computerPick == 'R')
+      cout << "Tie";
+    else if (computerPick == 'P')
+      cout << "You lose";
+    else if (computerPick == 'K')
+      cout << "You lose";
+    else if (computerPick == 'L')
+      cout << "You Win";
+    else if (computerPick == 'S')
+      cout << "You win";
+  }
+  // if user picks paper
+  if (userPick == 'P')
+  {
+    if (computerPick == 'R')
+      cout << "You win";
+    else if (computerPick == 'P')
+      cout << "Tie";
+    else if (computerPick == 'K')
+      cout << "You win";
+    else if (computerPick == 'L')
+      cout << "You lose";
+    else if (computerPick == 'S')
+      cout << "You lose";
+  }
 }
 
 

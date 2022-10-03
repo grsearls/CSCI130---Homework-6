@@ -29,7 +29,9 @@ void Sign()
 {
   int D; //Day of birth
   string M; // month of birth
-  int Mconvert; // months converted to a number 1-12
+  int Mconvert = 0; // months converted to a number 1-12
+
+  cin >> D >> M;
 
   // turn each month into a number 1-12
   if (M == "Jan")

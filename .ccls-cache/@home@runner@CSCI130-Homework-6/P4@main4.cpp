@@ -9,11 +9,18 @@ Problem 4 - Astrological Sign
 
 using namespace std;
 
+void Sign();
+
 int main() {
 
   int n; // number of classmates
   cin >> n;
 
+  // loop to display sign
+  for(int i = 0; i < n; i++)
+    {
+      Sign();
+    }
   
 }
 

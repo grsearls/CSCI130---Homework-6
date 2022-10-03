@@ -173,6 +173,35 @@ void DetermineWinner(char userPick, char computerPick)
     else if (computerPick == 'S')
       cout << "You lose";
   }
+  // if user picks scissors
+  if (userPick == 'S')
+  {
+    if (computerPick == 'R')
+      cout << "You lose";
+    else if (computerPick == 'P')
+      cout << "You win";
+    else if (computerPick == 'K')
+      cout << "You lose";
+    else if (computerPick == 'L')
+      cout << "You win";
+    else if (computerPick == 'S')
+      cout << "Tie";
+  }
+  // if user picks lizard
+  if (userPick == 'L')
+  {
+    if (computerPick == 'R')
+      cout << "You lose";
+    else if (computerPick == 'P')
+      cout << "You win";
+    else if (computerPick == 'K')
+      cout << "You win";
+    else if (computerPick == 'L')
+      cout << "Tie";
+    else if (computerPick == 'S')
+      cout << "You lose";
+  }
+  //
 }
 
 

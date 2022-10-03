@@ -9,5 +9,13 @@ int main() {
   double Q;             // is the volume flow rate (m3/s).
   double H;             // is the distance (in m) water falls on its way to the generator
 
+  cout << "Input the Head distance: ";
+  cin >> H;
+
+  cout << "Input the Water Flow Rate: ";
+  cin >> Q;
+
+  
+
   
 }
